@@ -30,21 +30,21 @@ sample_outputs/
 
 ---
 
-## What each script does (high level)
+## What each script does
 
-### `scripts/100_download_preprocess/111_bulk_download_source_data.py`
+#### `scripts/100_download_preprocess/111_bulk_download_source_data.py`
 - e-Statからソースデータ（都道府県別など）を、APIを使わずにまとめてダウンロードします。
 - 取得先URLや対象（statsId等）はスクリプト内の設定に従います。
 
-### `scripts/100_download_preprocess/112_build_national_gpkg.py`
+#### `scripts/100_download_preprocess/112_build_national_gpkg.py`
 - ダウンロード済みの境界線データ（都道府県別）を結合して、全国統一のGPKGを生成します。
 - CRS/列名などの統一処理が入っている想定です。
 
-### `scripts/100_download_preprocess/120_excel_structuring/121_download_excels.ipynb`
+#### `scripts/100_download_preprocess/120_excel_structuring/121_download_excels.ipynb`
 - Excel（特殊配列）の取得や、参照箇所の検討・動作確認用のNotebookです。
 - 「どのセル/範囲を読むか」を試行しやすいように ipynb にしています。
 
-### `scripts/200_gis_aggregation/201_aggregation.py`
+#### `scripts/200_gis_aggregation/201_aggregation.py`
 - 構造化したExcel由来データを、**小地域の境界データに結合**し、GPKGやCSVを出力します。
 - 47都道府県分を一括処理する想定です。
 
