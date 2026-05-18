@@ -12,22 +12,22 @@ e-Statのデータを**APIを使わずに**（Webの直接ダウンロード）�
 ## Repository structure
 
 現在の主な構成は以下です。
-scripts/
-  100_download_preprocess/
-    110_merge_boundaries/
-      111_bulk_download_source_data.py
-      112_build_national_gpkg.py
-    120_excel_structuring/
-      121_download_excels.ipynb
-  200_gis_aggregation/
-    201_aggregation.py
-
-sample_outputs/
-  tables/
-    zenkoku_all_sample.csv
-  gis/
-    .gitkeep
-
+eStat_nonapi/
+├─ scripts/
+│ ├─ 100_download_preprocess/
+│ │ ├─ 110_merge_boundaries/
+│ │ │ ├─ 111_bulk_download_source_data.py
+│ │ │ └─ 112_build_national_gpkg.py
+│ │ └─ 120_excel_structuring/
+│ │ └─ 121_download_excels.ipynb
+│ └─ 200_gis_aggregation/
+│ └─ 201_aggregation.py
+│
+└─ sample_outputs/
+├─ tables/
+│ └─ zenkoku_all_sample.csv
+└─ gis/
+└─ .gitkeep
 ---
 
 ## What each script does
