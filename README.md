@@ -10,8 +10,9 @@ e-Statのデータを**APIを使わずに**（Webの直接ダウンロード）�
 ---
 
 ## Repository structure
-
+---
 現在の主な構成は以下です。
+```text
 eStat_nonapi/
 ├─ scripts/
 │ ├─ 100_download_preprocess/
@@ -28,7 +29,8 @@ eStat_nonapi/
 │ └─ zenkoku_all_sample.csv
 └─ gis/
 └─ .gitkeep
----
+```
+
 
 ## What each script does
 
